@@ -1,22 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
 
 header {
     margin: 0;
-    height: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: #CCC;
+    align-items: center;
 }
 
 .header {
-    height: 50px;
     background-color: red;
 }
 
 .slider {
-    flex: 1;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -31,4 +34,33 @@ header {
     height: inherit;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0px 1px 1px #333;
+    font-size: 50px;
+
+}
+
+.slide--controls {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide--control {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: gold;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
